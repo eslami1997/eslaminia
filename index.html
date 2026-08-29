@@ -424,7 +424,7 @@ textarea.input { min-height: 90px; resize: vertical; }
     .sheet { width: 100%; padding: 28px 22px; }
     .cv-row { grid-template-columns: 1fr; gap: 10px; }
     .cv-grid3 { grid-template-columns: 1fr 1fr; }
-    .cv-head { grid-template-columns: 1fr !important; }
+    .cv-head { flex-direction: column-reverse !important; } .cv-head > * { width: 100% !important; max-width: 100% !important; }
   }
   @media (max-width: 560px) {
     .cv-grid2, .cv-grid3 { grid-template-columns: 1fr; }
@@ -482,7 +482,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <!-- ================= ENGLISH ================= -->
 <div dir="ltr" id="sheet-en" class="sheet">
 
-  <header class="cv-head" style="display: flex; grid-template-columns: 1fr 62mm; gap: 8mm; align-items: start; justify-content: space-between">
+  <header class="cv-head" style="display: flex; gap: 8mm; align-items: start; justify-content: space-between; flex-wrap: wrap;">
     <div>
       <h1 style="font-size: 40px; line-height: 1.02; letter-spacing: -0.03em; font-weight: 700; margin: 0;">Mohammad Hossein<br>Eslaminia</h1>
       <div style="font-size: 18px; font-weight: 700; color: var(--color-accent-400); margin-top: 8px; letter-spacing: 0.02em">Creative Director / Brand Director</div>
@@ -688,7 +688,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <!-- ================= فارسی ================= -->
 <div dir="rtl" id="sheet-fa" class="sheet" hidden>
 
-  <header class="cv-head" style="display: flex; grid-template-columns: 1fr 62mm; gap: 8mm; align-items: start; justify-content: space-between">
+  <header class="cv-head" style="display: flex; gap: 8mm; align-items: start; justify-content: space-between; flex-wrap: wrap;">
     <div style="width: 231px; height: 419px">
       <h1 style="font-size: 40px; line-height: 1.25; font-weight: 700; margin: 0; width: 218px; height: 96px">محمدحسین<br>اسلامی‌نیا</h1>
       <div style="font-size: 20px; font-weight: 700; color: var(--color-accent-400); margin-top: 8px;">مدیر خلاقیت / مدیر برند</div>
